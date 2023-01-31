@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+
+<GridPane id= "NodeGridPane" fx:id="grid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/style.css">
+
+    <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"
+               GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+        <Image url="C:\Users\jnpw2\Pictures\Saved Pictures\5.png"/>
+
+    </ImageView>
+
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="150.00000190734863" minWidth="10.0"
+                           prefWidth="149.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints maxHeight="100.33333587646484" minHeight="10.0" prefHeight="25.33333396911621"
+                        valignment="CENTER" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" vgrow="SOMETIMES"
+                        valignment="CENTER"/>
+        <RowConstraints maxHeight="165.66666603088379" minHeight="10.0" prefHeight="163.66666603088379"
+                        valignment="CENTER" vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <AnchorPane fx:id="draggedArea" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <Label fx:id="nodeTitle" alignment="CENTER" contentDisplay="CENTER" layoutY="13.0" prefHeight="18.0"
+               prefWidth="132.0" text="Label" id="NodeLabel">
+            <font >
+                <Font size="24.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+
+    <VBox fx:id="inputLayout" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0"
+          GridPane.rowIndex="2"/>
+
+    <VBox fx:id="outputLayout" alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="10.0"
+          GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+    <Button id="deleteButton" fx:id="deleteButton" mnemonicParsing="false" text="X" GridPane.columnIndex="2"/>
+
+</GridPane>
+
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.editor.pack.Controller">
+   <bottom>
+      <ScrollPane id="bottomPane" prefHeight="68.0" fx:id="addMenuScroll" vbarPolicy="NEVER" BorderPane.alignment="CENTER" stylesheets="@css/style.css">
+         <HBox fx:id="addMenuContainer" spacing="13.0">
+
+            <padding>
+               <Insets bottom="10.0" left="10.0" top="10.0"/>
+            </padding>
+
+            <Button fx:id="floatBButton" mnemonicParsing="false" text="Float">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="intBButton" mnemonicParsing="false" text="Int">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="stringBButton" mnemonicParsing="false" text="String">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="imageBButton" mnemonicParsing="false" text="AddIm">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="addImageBButton" mnemonicParsing="false" text="Image">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="addTextBButton" mnemonicParsing="false" text="Text">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="grayFilterBButton" mnemonicParsing="false" text="Gray Filter">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="brightnessFilterBButton" mnemonicParsing="false" text="Brightness">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="sepiaBButton" mnemonicParsing="false" text="Sepia">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="invertFilterBButton" mnemonicParsing="false" text="Invert">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="blurFilterBButton" mnemonicParsing="false" text="Blur Filter">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="moveBButton" mnemonicParsing="false" text="Move">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="scaleBButton" mnemonicParsing="false" text="Scale">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+            <Button fx:id="rotateBButton" mnemonicParsing="false" text="Rotate">
+               <font>
+                  <Font size="18.0"/>
+               </font>
+            </Button>
+
+         </HBox>
+      </ScrollPane>
+   </bottom>
+
+   <top>
+      <HBox id="topHBox" BorderPane.alignment="CENTER" stylesheets="@css/style.css">
+
+           <Button id="topButton" fx:id="saveMenuItem" mnemonicParsing="false" text="Save Scene">
+              <font>
+                 <Font size="10.0" />
+              </font>
+           </Button>
+
+           <Button id="topButton" fx:id="openMenuItem" mnemonicParsing="false" text="Open Scene" >
+              <font>
+                <Font size="10.0" />
+             </font>
+           </Button>
+
+      </HBox>
+   </top>
+
+   <center>
+      <SplitPane id="centerPane" stylesheets="@css/style.css">
+         <ScrollPane fx:id="sceneScroll" prefHeight="720.0" prefWidth="1000.0" stylesheets="@css/style.css">
+            <AnchorPane fx:id="sceneContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" prefHeight="10000.0" prefWidth="10000.0"/>
+         </ScrollPane>
+      </SplitPane>
+   </center>
+
+</BorderPane>
